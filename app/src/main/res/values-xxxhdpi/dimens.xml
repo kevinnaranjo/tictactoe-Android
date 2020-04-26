@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="padding_pantalla">24dp</dimen>
+    <dimen name="casilla_tablero">116dp</dimen>
+    <dimen name="texto_titulo">48sp</dimen>
+    <dimen name="texto_boton">32sp</dimen>
+    <dimen name="ancho_min_boton">240dp</dimen>
+    <dimen name="alto_min_boton">56dp</dimen>
+    <dimen name="margen_boton">12dp</dimen>
+    <dimen name="boton_radio">12dp</dimen>
+    <dimen name="padding_boton">12dp</dimen>
+    <dimen name="texto_boton_radio">24sp</dimen>
+</resources>

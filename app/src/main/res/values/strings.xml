@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">Tic Tac Toe</string>
+    <string name="un_jugador">Single player</string>
+    <string name="dos_jugadores">Multiplayer</string>
+    <string name="dificultad_facil">Easy</string>
+    <string name="dificultad_media">Medium</string>
+    <string name="dificultad_imposible">Insane</string>
+    <string name="casilla">Tile</string>
+    <string name="victoria_circulo">Circles wins !</string>
+    <string name="victoria_cruces">Crosses wins !</string>
+    <string name="empate">Tie !</string>
+</resources>

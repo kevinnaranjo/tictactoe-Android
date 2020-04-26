@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="@dimen/padding_pantalla"
+    android:weightSum="1"
+    android:orientation="horizontal"
+    android:background="@drawable/fondo"
+    tools:context=".MainActivity" >
+
+    <Space android:layout_width="0dp"
+        android:layout_height="2dp"
+        android:layout_weight="0.5">
+    </Space>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_gravity="center_vertical"
+        android:gravity="center_horizontal">
+        <TextView
+            style="@style/titulo"
+            android:text="@string/app_name">
+        </TextView>
+
+        <Button
+            android:id="@+id/btnUnJugador"
+            android:text="@string/un_jugador"
+            style="@style/boton">
+        </Button>
+
+        <RadioGroup
+            android:id="@+id/dificultadesGroup"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <RadioButton
+                android:id="@+id/radioFacil"
+                android:text="@string/dificultad_facil"
+                style="@style/radioBoton">
+            </RadioButton>
+
+            <RadioButton
+                android:id="@+id/radioNormal"
+                style="@style/radioBoton"
+                android:checked="true"
+                android:text="@string/dificultad_media"></RadioButton>
+
+            <RadioButton
+                android:id="@+id/radioDificil"
+                android:text="@string/dificultad_imposible"
+                style="@style/radioBoton">
+            </RadioButton>
+        </RadioGroup>
+
+        <Button
+            android:id="@+id/btnDosJugadores"
+            android:text="@string/dos_jugadores"
+            style="@style/boton">
+        </Button>
+    </LinearLayout>
+
+    <Space android:layout_width="0dp"
+        android:layout_height="2dp"
+        android:layout_weight="0.5">
+    </Space>
+
+    <GridLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:columnCount="3"
+        android:rowCount="3">
+
+        <ImageView
+            android:id="@+id/a1"
+            style="@style/casillaTablero">
+        </ImageView>
+
+        <ImageView
+            android:id="@+id/a2"
+            style="@style/casillaTablero">
+        </ImageView>
+
+        <ImageView
+            android:id="@+id/a3"
+            android:src="@drawable/circulo"
+            style="@style/casillaTablero">
+        </ImageView>
+
+        <ImageView
+            android:id="@+id/b1"
+            style="@style/casillaTablero">
+        </ImageView>
+
+        <ImageView
+            android:id="@+id/b2"
+            android:src="@drawable/circulo"
+            style="@style/casillaTablero">
+        </ImageView>
+
+        <ImageView
+            android:id="@+id/b3"
+            style="@style/casillaTablero">
+        </ImageView>
+
+        <ImageView
+            android:id="@+id/c1"
+            android:src="@drawable/circulo"
+            style="@style/casillaTablero">
+        </ImageView>
+
+        <ImageView
+            android:id="@+id/c2"
+            android:src="@drawable/aspa"
+            style="@style/casillaTablero">
+        </ImageView>
+
+        <ImageView
+            android:id="@+id/c3"
+            android:src="@drawable/aspa"
+            style="@style/casillaTablero">
+        </ImageView>
+
+    </GridLayout>
+</LinearLayout>
